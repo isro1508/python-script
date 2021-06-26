@@ -36,7 +36,7 @@ class DiskMonitor:
         ''' Converts the input size (in KB) into a more readable format '''
         for x in ['KB', 'MB', 'GB', 'TB']:
             if size < 1024.0:
-                return f'{size:3.0f} {x}'
+                return f'{size:3.1f} {x}'
             size /= 1024.0
         return f'{size:,}'
 
